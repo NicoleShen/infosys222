@@ -329,9 +329,9 @@ SELECT staffLastName, salary
 FROM Staff s, StaffAssignment sa
 WHERE s.staffCode = sa.staffCode
 AND salary > (SELECT salary
-			  FROM Staff s, StaffAssignment sa
-			  WHERE s.staffCode = sa.staffCode
-			  AND LOWER(staffLastName) = 'jones');
+	FROM Staff s, StaffAssignment sa
+	WHERE s.staffCode = sa.staffCode
+	AND LOWER(staffLastName) = 'jones');
 
 staffLastName  salary    
 -------------  ----------
@@ -355,13 +355,10 @@ Schindler      50000.0
 
 ```
 SELECT staffLastName
-FROM Staff
-WHERE staffCode =
- (SELECT staffCode
-  FROM StaffAssignment
-  WHERE salary =
-   (SELECT MAX(salary)
-	  FROM StaffAssignment));
+FROM Staff s, StaffAssignment sa
+WHERE s.staffCode = sa.staffCode
+AND salary = (SELECT MAX(salary)
+ FROM StaffAssignment);
 
 staffLastName
 -------------
