@@ -169,7 +169,7 @@ SELECT staffCode, role, salary, CASE
 WHEN LOWER(role) = 'branch manager' THEN salary*0.9
 WHEN LOWER(role) = 'sales person' THEN salary
 WHEN LOWER(role) = 'office admin' THEN salary*1.15
-END AS revisedSalary
+END revisedSalary
 FROM StaffAssignment s, Role r
 WHERE s.roleID = r.roleID;
 
@@ -293,8 +293,9 @@ DROP VIEW LatestBookPrice;
 
 ## TRIGGER
 - A trigger executes specific SQL statement when certain event occurs
-	- BEFORE, AFTER or INSTEAD OF
-	- INSERT, DELETE, UPDATE or UPDATE OF column ON a table
+	- BEFORE or AFTER for table; INSTEAD OF for view
+	- INSERT, DELETE, UPDATE or UPDATE OF column ON table or view
+	- WHEN clause (optional); OLD or NEW reference
 
 ```
 CREATE TABLE Log(x);
