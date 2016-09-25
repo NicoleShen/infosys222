@@ -9,7 +9,7 @@
 
 - The database can be created by running a single [SQL script](https://raw.githubusercontent.com/johnny723/infosys222/master/case/chinook.sql)
 
-- The company Chinook runs a business of selling tracks and albums of music online to their customers. The database manages all the transactions, and all relevant information related to the products and customers
+- The company Chinook runs a business of selling tracks and albums of music and video online. The database manages all the transactions, and all relevant information related to the products and customers
 
 
 
@@ -258,7 +258,7 @@ CREATE TABLE Track
 
 
 ## Q09: Quick music (8%)
-- Write a single SQL statement to create a new playlist called 'Quick Music'; and write another single SQL statement to associate the new playlist with the 10 shortest duration tracks in the Track table
+- Write a single SQL statement to create a new playlist called 'Quick Music'; and write another single SQL statement to associate the new playlist with the 10 shortest duration tracks from the Track table
 
 
 
