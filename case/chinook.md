@@ -214,14 +214,33 @@ CREATE TABLE Track
 - Write a single SELECT statement to project your first name, last name, student ID and a short description of yourself as four string literals. Rename the column headings appropriately
 
 
+## Sample output
+```
+First Name  Last Name   ID          Description
+----------  ----------  ----------  -------------
+Johnny      Chan        9999999     I am the king
+```
+
+<br />
+- 🎉 unlocked by Nicholas!
+
+
 
 ## Q02: Who the F (5%)
 - Write a single SQL statement to list all the artists that begin their name with the letter F (including both upper and lower cases). The output should include all columns from the Artist table
 
 
+## Sample output
+- yet to be unlocked!
+
+
 
 ## Q03: Order by name (5%)
 - Write a single SQL statement to list all employee names (each combining the first name and the last name with a space in between) from the Employee table. Sort the output by the length of the employee name, with the longest one to go first in the list
+
+
+## Sample output
+- yet to be unlocked!
 
 
 
@@ -230,6 +249,9 @@ CREATE TABLE Track
 
 - Write a single SQL statement (without using subquery) to update that particular fax number by adding a + sign at the front of it
 
+
+## Sample output
+- yet to be unlocked!
 
 
 ## Q05: Create the country (8%)
@@ -241,9 +263,16 @@ CREATE TABLE Track
   - Define a check on Code to make sure they are always less than or equal to seven characters long
 
 
+## No sample output
+
+
 
 ## Q06: Find the right song (8%)
 - Write a single SQL statement to list all the tracks that have the exact word 'right' (including both upper and lower cases) as part of the name in the Track table. In other words, it will not include track names with words like 'rights' or 'righteous' in the output
+
+
+## Sample output
+- yet to be unlocked!
 
 
 
@@ -251,9 +280,17 @@ CREATE TABLE Track
 - Write a single SQL statement to list albums with three columns: the title of the album, the total number of tracks in that album, and the price of the album. Exclude albums that are priced lower than thirty dollars from the output. Rename the column headings appropriately, and sort the output by the price descendingly
 
 
+## Sample output
+- yet to be unlocked!
+
+
 
 ## Q08: Youngest manager (8%)
 - Write a single SQL statement to show the first name and the age of an employee who is the youngest manager in the company. The age should be shown as a whole number (i.e. without any decimal places) in the output
+
+
+## Sample output
+- yet to be unlocked!
 
 
 
@@ -261,14 +298,26 @@ CREATE TABLE Track
 - Write a single SQL statement to create a new playlist called 'Quick Music'; and write another single SQL statement to associate the new playlist with the 10 shortest duration tracks from the Track table
 
 
+## Sample output
+- yet to be unlocked!
+
+
 
 ## Q10: AAC (8%)
 - Write a single SQL statement to generate two rows of information: one row showing the number of tracks formatted in AAC media type, and the other row showing the number of tracks formatted in non-AAC media type. There should be two columns in the output: first column is named Media which has the value AAC or non-AAC; second column is named Tracks which shows the total number of tracks
 
 
+## Sample output
+- yet to be unlocked!
+
+
 
 ## Q11: Multi genre (8%)
 - Write a single SQL statement to project two columns for a list: the title of an album in the first column, and the names of genre that the album is associated with in the second column. Exclude albums that associate with only one genre, and rename the column headings appropriately
+
+
+## Sample output
+- yet to be unlocked!
 
 
 
@@ -278,6 +327,10 @@ CREATE TABLE Track
   - The first column displays email provider in upper cases (e.g. GMAIL, YAHOO), and the information could be obtained from the email of customer. Email from the same provider with different country code (e.g. yahoo.com, yahoo.de, yahoo.ca) should be considered as part of the same email provider (e.g. YAHOO)
   - The second column displays the percentage of customer with two decimal places
   - Sort the output first by Percentage descendingly, then by Provider ascendingly
+
+
+## Sample output
+- yet to be unlocked!
 
 
 
@@ -292,12 +345,20 @@ CREATE TABLE Track
   - You are told that you cannot use OUTER JOIN for this particular task
 
 
+## Sample output
+- yet to be unlocked!
+
+
 
 ## Q14: We are so lost (8%)
 
 - Write a single SQL statement to create a trigger named UndeleteLostTrack. The objective of this trigger is to cancel the effect of deleting any track from the Track table that associates with LOST the TV show (which could be referenced from the title of an album)
   - The trigger does not stop the deletion; but it cancels its effect by recreating the exact same row or rows of deleted track or tracks
   - The trigger ignores deletion of track that has no association with LOST
+
+
+## Sample output
+- yet to be unlocked!
 
 
 
