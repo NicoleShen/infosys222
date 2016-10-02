@@ -1,6 +1,6 @@
 # <i class="fa fa-database"></i> INFOSYS 222
 ### Case: Chinook
-<i class="fa fa-copyright"></i> [Johnny Chan](mailto:jh.chan@auckland.ac.nz) | <i class="fa fa-twitter"></i> [@infosys222](http://twitter.com/infosys222) | <i class="fa fa-calendar"></i> 2016-09-19
+<i class="fa fa-copyright"></i> [Johnny Chan](mailto:jh.chan@auckland.ac.nz) | <i class="fa fa-twitter"></i> [@infosys222](http://twitter.com/infosys222) | <i class="fa fa-calendar-o"></i> 2016-09-19 | <i class="fa fa-calendar-plus-o"></i> 2016-10-03
 
 
 
@@ -214,14 +214,54 @@ CREATE TABLE Track
 - Write a single SELECT statement to project your first name, last name, student ID and a short description of yourself as four string literals. Rename the column headings appropriately
 
 
+## Sample output
+
+```
+First Name  Last Name   ID          Description
+----------  ----------  ----------  -------------
+Johnny      Chan        9999999     I am the king
+```
+
+
 
 ## Q02: Who the F (5%)
 - Write a single SQL statement to list all the artists that begin their name with the letter F (including both upper and lower cases). The output should include all columns from the Artist table
 
 
+## Sample output
+```
+ArtistID    Name
+----------  -------------------------------
+23          Frank Zappa & Captain Beefheart
+39          Fernanda Porto
+82          Faith No More
+83          Falamansa
+84          Foo Fighters
+85          Frank Sinatra
+86          Funk Como Le Gusta
+241         Felix Schmidt, London Symphony
+251         Fretwork
+```
+
+
 
 ## Q03: Order by name (5%)
 - Write a single SQL statement to list all employee names (each combining the first name and the last name with a space in between) from the Employee table. Sort the output by the length of the employee name, with the longest one to go first in the list
+
+
+## Sample output
+```
+Name
+----------------
+Michael Mitchell
+Laura Callahan
+Nancy Edwards
+Margaret Park
+Steve Johnson
+Andrew Adams
+Jane Peacock
+Robert King
+```
 
 
 
@@ -246,14 +286,59 @@ CREATE TABLE Track
 - Write a single SQL statement to list all the tracks that have the exact word 'right' (including both upper and lower cases) as part of the name in the Track table. In other words, it will not include track names with words like 'rights' or 'righteous' in the output
 
 
+## Sample output
+```
+Name
+--------------------------------------------------
+Right Through You
+Night Time Is The Right Time
+You Can't Do it Right (With the One You Love)
+Right Next Door to Hell
+Always Be All Right
+Get Right
+Right On Time
+The Right Thing
+Right Now
+You Got No Right
+I Guess You're Right
+```
+
+
 
 ## Q07: Album luxury (8%)
 - Write a single SQL statement to list albums with three columns: the title of the album, the total number of tracks in that album, and the price of the album. Exclude albums that are priced lower than thirty dollars from the output. Rename the column headings appropriately, and sort the output by the price descendingly
 
 
+## Sample output
+```
+Album                                               Tracks      Price
+--------------------------------------------------  ----------  ----------
+Greatest Hits                                       57          56.43
+Lost, Season 3                                      26          51.74
+Lost, Season 1                                      25          49.75
+The Office, Season 3                                25          49.75
+Battlestar Galactica (Classic), Season 1            24          47.76
+Lost, Season 2                                      24          47.76
+Heroes, Season 1                                    23          45.77
+The Office, Season 2                                22          43.78
+Battlestar Galactica, Season 3                      19          37.81
+LOST, Season 4                                      17          33.83
+Minha Historia                                      34          33.66
+```
+<!-- .element: style="font-size:85%" -->
+
+
 
 ## Q08: Youngest manager (8%)
 - Write a single SQL statement to show the first name and the age of an employee who is the youngest manager in the company. The age should be shown as a whole number (i.e. without any decimal places) in the output
+
+
+## Sample output
+```
+Name                  Age
+--------------------  ----------
+Michael               43
+```
 
 
 
@@ -266,9 +351,37 @@ CREATE TABLE Track
 - Write a single SQL statement to generate two rows of information: one row showing the number of tracks formatted in AAC media type, and the other row showing the number of tracks formatted in non-AAC media type. There should be two columns in the output: first column is named Media which has the value AAC or non-AAC; second column is named Tracks which shows the total number of tracks
 
 
+## Sample output
+```
+Media                 Tracks
+--------------------  ----------
+AAC                   255
+non-AAC               3248
+```
+
+
 
 ## Q11: Multi genre (8%)
 - Write a single SQL statement to project two columns for a list: the title of an album in the first column, and the names of genre that the album is associated with in the second column. Exclude albums that associate with only one genre, and rename the column headings appropriately
+
+
+## Sample output
+```
+Album                 Genre
+--------------------  -----------------------------------------
+Battlestar Galactica  TV Shows,Science Fiction,Sci Fi & Fantasy
+Greatest Hits         Rock,Reggae,Metal
+Heroes, Season 1      TV Shows,Drama
+LOST, Season 4        Drama,TV Shows
+Live After Death      Heavy Metal,Metal
+Lost, Season 2        TV Shows,Drama
+Lost, Season 3        TV Shows,Drama
+Rock In Rio CD2       Rock,Metal
+The Number of The Be  Metal,Rock
+The Office, Season 3  TV Shows,Comedy
+Unplugged             Blues,Latin
+```
+<!-- .element: style="font-size:90%" -->
 
 
 
@@ -278,6 +391,35 @@ CREATE TABLE Track
   - The first column displays email provider in upper cases (e.g. GMAIL, YAHOO), and the information could be obtained from the email of customer. Email from the same provider with different country code (e.g. yahoo.com, yahoo.de, yahoo.ca) should be considered as part of the same email provider (e.g. YAHOO)
   - The second column displays the percentage of customer with two decimal places
   - Sort the output first by Percentage descendingly, then by Provider ascendingly
+
+
+## Sample output
+```
+Provider    Percentage
+----------  ----------
+YAHOO       30.51     
+GMAIL       13.56     
+APPLE       11.86     
+HOTMAIL     6.78      
+SHAW        5.08      
+AOL         3.39      
+SURFEU      3.39      
+UOL         3.39      
+COMCAST     1.69      
+EMBRAER     1.69      
+GOOGLE      1.69      
+JETBRAINS   1.69      
+JUBII       1.69      
+MICROSOFT   1.69      
+REDIFF      1.69      
+RIOTUR      1.69      
+ROGERS      1.69      
+SAPO        1.69      
+WOODSTOCK   1.69      
+WP          1.69      
+YACHOO      1.69      
+```
+<!-- .element: style="font-size:65%" -->
 
 
 
@@ -290,6 +432,40 @@ CREATE TABLE Track
   - A company customer is defined by the presence of value in the column Company of the Customer table; an individual customer is defined by the absence of value in that same column
   - Sort the output by country ascendingly
   - You are told that you cannot use OUTER JOIN for this particular task
+
+
+## Sample output
+```
+SELECT * FROM CustomerView;
+
+Country               Individual  Company
+--------------------  ----------  ----------
+Argentina             1           0
+Australia             1           0
+Austria               1           0
+Belgium               1           0
+Brazil                1           4
+Canada                6           2
+Chile                 1           0
+Czech Republic        1           1
+Denmark               1           0
+Finland               1           0
+France                5           0
+Germany               4           0
+Hungary               1           0
+India                 2           0
+Ireland               1           0
+Italy                 1           0
+Netherlands           1           0
+Norway                1           0
+Poland                1           0
+Portugal              2           0
+Spain                 1           0
+Sweden                1           0
+USA                   10          3
+United Kingdom        3           0
+```
+<!-- .element: style="font-size:55%" -->
 
 
 
