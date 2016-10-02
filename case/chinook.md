@@ -1,6 +1,6 @@
 # <i class="fa fa-database"></i> INFOSYS 222
 ### Case: Chinook
-<i class="fa fa-copyright"></i> [Johnny Chan](mailto:jh.chan@auckland.ac.nz) | <i class="fa fa-twitter"></i> [@infosys222](http://twitter.com/infosys222) | <i class="fa fa-calendar"></i> 2016-09-19
+<i class="fa fa-copyright"></i> [Johnny Chan](mailto:jh.chan@auckland.ac.nz) | <i class="fa fa-twitter"></i> [@infosys222](http://twitter.com/infosys222) | <i class="fa fa-calendar-o"></i> 2016-09-19 | <i class="fa fa-calendar-plus-o"></i> 2016-10-03
 
 
 
@@ -215,15 +215,22 @@ CREATE TABLE Track
 
 
 ## Sample output
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 ```
 First Name  Last Name   ID          Description
 ----------  ----------  ----------  -------------
 Johnny      Chan        9999999     I am the king
 ```
 
+<<<<<<< HEAD
 <br />
 - 🎉 unlocked by Nicholas!
 
+=======
+>>>>>>> master
 
 
 ## Q02: Who the F (5%)
@@ -231,7 +238,23 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+ArtistID    Name
+----------  -------------------------------
+23          Frank Zappa & Captain Beefheart
+39          Fernanda Porto
+82          Faith No More
+83          Falamansa
+84          Foo Fighters
+85          Frank Sinatra
+86          Funk Como Le Gusta
+241         Felix Schmidt, London Symphony
+251         Fretwork
+```
+>>>>>>> master
 
 
 
@@ -240,7 +263,22 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+Name
+----------------
+Michael Mitchell
+Laura Callahan
+Nancy Edwards
+Margaret Park
+Steve Johnson
+Andrew Adams
+Jane Peacock
+Robert King
+```
+>>>>>>> master
 
 
 
@@ -272,7 +310,25 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+Name
+--------------------------------------------------
+Right Through You
+Night Time Is The Right Time
+You Can't Do it Right (With the One You Love)
+Right Next Door to Hell
+Always Be All Right
+Get Right
+Right On Time
+The Right Thing
+Right Now
+You Got No Right
+I Guess You're Right
+```
+>>>>>>> master
 
 
 
@@ -281,7 +337,26 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+Album                                               Tracks      Price
+--------------------------------------------------  ----------  ----------
+Greatest Hits                                       57          56.43
+Lost, Season 3                                      26          51.74
+Lost, Season 1                                      25          49.75
+The Office, Season 3                                25          49.75
+Battlestar Galactica (Classic), Season 1            24          47.76
+Lost, Season 2                                      24          47.76
+Heroes, Season 1                                    23          45.77
+The Office, Season 2                                22          43.78
+Battlestar Galactica, Season 3                      19          37.81
+LOST, Season 4                                      17          33.83
+Minha Historia                                      34          33.66
+```
+<!-- .element: style="font-size:85%" -->
+>>>>>>> master
 
 
 
@@ -290,7 +365,15 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+Name                  Age
+--------------------  ----------
+Michael               43
+```
+>>>>>>> master
 
 
 
@@ -308,7 +391,16 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+Media                 Tracks
+--------------------  ----------
+AAC                   255
+non-AAC               3248
+```
+>>>>>>> master
 
 
 
@@ -317,7 +409,26 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+Album                 Genre
+--------------------  -----------------------------------------
+Battlestar Galactica  TV Shows,Science Fiction,Sci Fi & Fantasy
+Greatest Hits         Rock,Reggae,Metal
+Heroes, Season 1      TV Shows,Drama
+LOST, Season 4        Drama,TV Shows
+Live After Death      Heavy Metal,Metal
+Lost, Season 2        TV Shows,Drama
+Lost, Season 3        TV Shows,Drama
+Rock In Rio CD2       Rock,Metal
+The Number of The Be  Metal,Rock
+The Office, Season 3  TV Shows,Comedy
+Unplugged             Blues,Latin
+```
+<!-- .element: style="font-size:90%" -->
+>>>>>>> master
 
 
 
@@ -330,7 +441,36 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+Provider    Percentage
+----------  ----------
+YAHOO       30.51     
+GMAIL       13.56     
+APPLE       11.86     
+HOTMAIL     6.78      
+SHAW        5.08      
+AOL         3.39      
+SURFEU      3.39      
+UOL         3.39      
+COMCAST     1.69      
+EMBRAER     1.69      
+GOOGLE      1.69      
+JETBRAINS   1.69      
+JUBII       1.69      
+MICROSOFT   1.69      
+REDIFF      1.69      
+RIOTUR      1.69      
+ROGERS      1.69      
+SAPO        1.69      
+WOODSTOCK   1.69      
+WP          1.69      
+YACHOO      1.69      
+```
+<!-- .element: style="font-size:65%" -->
+>>>>>>> master
 
 
 
@@ -346,7 +486,41 @@ Johnny      Chan        9999999     I am the king
 
 
 ## Sample output
+<<<<<<< HEAD
 - yet to be unlocked!
+=======
+```
+SELECT * FROM CustomerView;
+
+Country               Individual  Company
+--------------------  ----------  ----------
+Argentina             1           0
+Australia             1           0
+Austria               1           0
+Belgium               1           0
+Brazil                1           4
+Canada                6           2
+Chile                 1           0
+Czech Republic        1           1
+Denmark               1           0
+Finland               1           0
+France                5           0
+Germany               4           0
+Hungary               1           0
+India                 2           0
+Ireland               1           0
+Italy                 1           0
+Netherlands           1           0
+Norway                1           0
+Poland                1           0
+Portugal              2           0
+Spain                 1           0
+Sweden                1           0
+USA                   10          3
+United Kingdom        3           0
+```
+<!-- .element: style="font-size:55%" -->
+>>>>>>> master
 
 
 
