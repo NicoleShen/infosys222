@@ -348,7 +348,7 @@ Time   Trans.   Request                        Stored Value
 ## Locking
 - Lock guarantees exclusive use of data items to a current transaction
 
-- There are different levels of locking: column, row, page, table, database
+- There are different levels of locking: column, row, table, page, database
 
 - Although locking prevents serious data integrity error, it could hamper the serializability of data and causes [deadlock](http://en.wikipedia.org/wiki/Deadlock)
 
@@ -356,11 +356,93 @@ Time   Trans.   Request                        Stored Value
 ## Timestamp
 - Timestamp is unique and global; a high-valued timestamp occurs later in time than a lower-valued timestamp
 
-- All database operations within the same transaction must have the same timestamp
+- All operations in the same transaction must have the same timestamp
+
+- All objects in a database have one read timestamp and one write timestamp
 
 - DBMS executes conflicting operations in timestamp order
 
 - They increase memory requirement
+
+
+
+## SQLite: COMMIT
+
+
+## Initial state
+![](https://www.sqlite.org/images/ac/commit-0.gif)
+
+
+## Acquiring a read lock
+![](https://www.sqlite.org/images/ac/commit-1.gif)
+
+
+## Reading out of the database
+![](https://www.sqlite.org/images/ac/commit-2.gif)
+
+
+## Obtaining a reserved lock
+![](https://www.sqlite.org/images/ac/commit-3.gif)
+
+
+## Creating a rollback journal
+![](https://www.sqlite.org/images/ac/commit-4.gif)
+
+
+## Changing data in user space
+![](https://www.sqlite.org/images/ac/commit-5.gif)
+
+
+## Copying rollback journal
+![](https://www.sqlite.org/images/ac/commit-6.gif)
+
+
+## Obtaining an exclusive lock
+![](https://www.sqlite.org/images/ac/commit-7.gif)
+
+
+## Writing changes
+![](https://www.sqlite.org/images/ac/commit-8.gif)
+
+
+## Copying changes
+![](https://www.sqlite.org/images/ac/commit-9.gif)
+
+
+## Deleting rollback journal
+![](https://www.sqlite.org/images/ac/commit-A.gif)
+
+
+## Releasing the lock
+![](https://www.sqlite.org/images/ac/commit-B.gif)
+
+
+
+## SQLite: ROLLBACK
+
+
+## When something goes wrong
+![](https://www.sqlite.org/images/ac/rollback-0.gif)
+
+
+## Hot rollback journal
+![](https://www.sqlite.org/images/ac/rollback-1.gif)
+
+
+## Obtaining an exclusive lock
+![](https://www.sqlite.org/images/ac/rollback-2.gif)
+
+
+## Rolling back incomplete changes
+![](https://www.sqlite.org/images/ac/rollback-3.gif)
+
+
+## Deleting hot rollback journal
+![](https://www.sqlite.org/images/ac/rollback-4.gif)
+
+
+## BAU
+![](https://www.sqlite.org/images/ac/rollback-5.gif)
 
 
 
@@ -382,6 +464,8 @@ Time   Trans.   Request                        Stored Value
 	- [Database transaction](http://en.wikipedia.org/wiki/Database_transaction)
 
 	- [Concurrency control](http://en.wikipedia.org/wiki/Concurrency_control  )
+
+	- [Atomic commit in SQLite](https://www.sqlite.org/atomiccommit.html)
 
 
 ## <i class="fa fa-calendar"></i> Schedule
